@@ -1,0 +1,27 @@
+main {
+  display: flex;
+  width: 80vw;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.main-content {
+  position: relative;
+}
+main img {
+  margin-top: 5rem;
+  /* width: 100%; */
+  /* text-align: center; */
+}
+.main-content button {
+  position: absolute;
+  top: 82%;
+  left: 80%;
+  padding: 10px 10px;
+  background-color: white;
+  border: solid 2px black;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+}

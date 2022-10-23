@@ -8,6 +8,7 @@ import StickyBar from "./components/StickyBar";
 import Shop from "./components/Shop";
 import Cart from "./components/Cart";
 import Items from "./components/Items";
+import "./styles/App.css";
 
 const App = createBrowserRouter(
   createRoutesFromElements(
