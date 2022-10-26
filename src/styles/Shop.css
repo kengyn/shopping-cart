@@ -1,0 +1,27 @@
+.shop-main {
+  width: 100vw;
+  height: 95vh;
+  position: relative;
+  overflow: hidden;
+  padding: 0 10vw;
+}
+
+.shop-main h1 {
+  font-size: 1.3rem;
+}
+
+.items-container ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.items-container ul li img {
+  cursor: pointer;
+  width: 250px;
+  height: auto;
+  transition: transform 0.2s;
+}
+
+.items-container ul li img:hover {
+  transform: scale(1.05);
+}

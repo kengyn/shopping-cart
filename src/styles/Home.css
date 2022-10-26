@@ -10,18 +10,21 @@ main {
 }
 main img {
   margin-top: 5rem;
-  /* width: 100%; */
-  /* text-align: center; */
 }
 .main-content button {
   position: absolute;
-  top: 82%;
+  top: 84%;
   left: 80%;
   padding: 10px 10px;
   background-color: white;
-  border: solid 2px black;
+  border: solid 3px black;
   border-radius: 5px;
   font-size: 0.9rem;
   font-weight: bold;
   cursor: pointer;
+}
+
+.main-content button:hover {
+  background-color: black;
+  color: white;
 }

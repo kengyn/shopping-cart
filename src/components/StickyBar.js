@@ -1,5 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom";
 import "../styles/StickyBar.css";
+
 export default function StickyBar() {
   return (
     <>
@@ -23,7 +24,7 @@ export default function StickyBar() {
             <input type="text" />
           </div>
           <div className="nav-cart">
-            <div className="current-cart">1</div>
+            <div className="current-cart">0</div>
             <NavLink to="cart">
               <img src={require("../assets/cart-outline.png")} alt="cart" />
             </NavLink>
