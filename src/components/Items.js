@@ -1,4 +1,4 @@
-import acquaintedFate from "../assets/Item_Acquaint_Fate.webp";
+import acquaintFate from "../assets/Item_Acquaint_Fate.webp";
 import intertwinedFate from "../assets/Item_Intertwined_Fate.webp";
 import saintQuartz from "../assets/Saintquartz.webp";
 import diamonds from "../assets/daimonds.png";
@@ -7,11 +7,15 @@ import galaxyBookmark from "../assets/galaxy-bookmark.png";
 
 const items = [
   {
-    id: "acquainted-fate",
-    name: "Acquainted Fate",
+    id: "acquaint-fate",
+    name: "Acquaint Fate",
     price: 1,
-    image: acquaintedFate,
+    image: acquaintFate,
     imgLink: "Item_Acquaint_Fate.webp",
+    game: "Genshin Impact",
+    banner: "Standard Wishes",
+    description:
+      "A seed that lights up the night. No matter the distance apart, guided by the stone's glimmer, the fated will meet under the stars.",
   },
   {
     id: "intertwined-fate",
@@ -19,6 +23,10 @@ const items = [
     price: 1,
     image: intertwinedFate,
     imgLink: "Item_Intertwined_Fate.webp",
+    game: "Genshin Impact",
+    banner: "Event Wishes",
+    description:
+      "A fateful stone that connects dreams. Its glimmers can entwine fates and connect dreams, just as how its glimmer links stars into the shapes of a heart's desires.",
   },
   {
     id: "saint-quartz",
@@ -26,13 +34,19 @@ const items = [
     price: 1,
     image: saintQuartz,
     imgLink: "Saintquartz.webp",
+    game: "Fate Grand Order",
+    banner: "All SQ Summons",
+    description:
+      "Stone with divine power. A crystallization of concepts that decides many a future. Also called pseudo-spiritron crystal.",
   },
   {
-    id: "diamonds",
-    name: "Diamonds",
+    id: "gem",
+    name: "Gem",
     price: 1,
     image: diamonds,
     imgLink: "daimonds.png",
+    game: "Guardian Tales",
+    banner: "All GT Hero Summons",
   },
   {
     id: "covenant-bookmark",
@@ -40,6 +54,10 @@ const items = [
     price: 1,
     image: covenantBookmark,
     imgLink: "Covenant-Bookmark.png",
+    game: "Epic Seven",
+    banner: "Covenant Summons",
+    description:
+      "Open up a special page and make a holy contract using Covenant Bookmarks.",
   },
   {
     id: "galaxy-bookmark",
@@ -47,6 +65,10 @@ const items = [
     price: 1,
     image: galaxyBookmark,
     imgLink: "galaxy-bookmark.png",
+    game: "Epic Seven",
+    banner: "Moonlight Summmons",
+    description:
+      "A Bookmark with the power of the universe used to summon unique Heroes who might not normally be found in this world.",
   },
 ];
 

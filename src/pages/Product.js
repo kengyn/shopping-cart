@@ -10,6 +10,19 @@ async function loader({ params }) {
 const Product = () => {
   let navigate = useNavigate();
   const product = useLoaderData();
+  let desc;
+
+  if (product.id === "gem") {
+    desc = (
+      <img
+        className="mayreel"
+        src={require(`../assets/Mayreel.png`)}
+        alt="mayreel"
+      />
+    );
+  } else {
+    desc = product.description;
+  }
 
   useEffect(() => {
     const closeButton = document.querySelector(".close-button");
@@ -37,12 +50,31 @@ const Product = () => {
   return (
     <div className="display-product">
       <div className="product-container">
-        <div className="close-button">X</div>
         <img src={require(`../assets/${product.imgLink}`)} alt={product.name} />
-        <div>{product.name}</div>
-        <div>${product.price}</div>
+        <div className="product-info">
+          <div className="product-header">
+            <div className="close-button">x</div>
+            <div className="product-name">{product.name}</div>
+            <div className="product-price">${product.price}</div>
+          </div>
+          <div className="product-description">
+            <div>
+              <div className="product-description-header">Game</div>
+              <div>{product.game}</div>
+            </div>
+            <div>
+              <div className="product-description-header">Banner</div>
+              <div>{product.banner}</div>
+            </div>
+            <div>
+              <div className="product-description-header">Description</div>
+              <div>{desc}</div>
+            </div>
+          </div>
+        </div>
         <div className="buy-container">
-          <input type="number" id="quantity"></input>
+          <label htmlFor="quantity">QTY</label>
+          <input type="number" id="quantity" defaultValue={1}></input>
           <button>Add To Cart</button>
         </div>
       </div>

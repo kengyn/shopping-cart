@@ -8,14 +8,18 @@
 
 .shop-main h1 {
   font-size: 1.3rem;
+  margin-top: 1rem;
 }
 
 .items-container ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  gap: 1rem;
 }
 
-.items-container ul li img {
+.items-container ul li img,
+.items-container ul li {
   cursor: pointer;
   width: 250px;
   height: auto;
@@ -24,4 +28,9 @@
 
 .items-container ul li img:hover {
   transform: scale(1.05);
+}
+
+.shop-item-name {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }

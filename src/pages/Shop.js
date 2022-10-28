@@ -9,9 +9,9 @@ const Shop = () => {
       <li key={item.id} className={item.id}>
         <NavLink to={`product/${item.id}`}>
           <img src={item.image} alt={item.name} />
+          <div className="shop-item-name">{item.name}</div>
+          <div className="shop-item-price">${item.price}</div>
         </NavLink>
-        <div>{item.name}</div>
-        <div>${item.price}</div>
       </li>
     ));
   };
