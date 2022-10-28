@@ -1,7 +1,13 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useLoaderData } from "react-router-dom";
+import { totalQty } from "../pages/Cart";
 import "../styles/StickyBar.css";
 
-export default function StickyBar() {
+function loader() {
+  return totalQty();
+}
+
+function StickyBar() {
+  const qtyInCart = useLoaderData();
   return (
     <>
       <header>
@@ -14,7 +20,7 @@ export default function StickyBar() {
               <NavLink to="shop">Shop</NavLink>
             </li>
             <li>
-              <NavLink to="#">Roll Gacha</NavLink>
+              <NavLink to="gacha">Roll Gacha</NavLink>
             </li>
           </ul>
         </div>
@@ -24,7 +30,7 @@ export default function StickyBar() {
             <input type="text" />
           </div>
           <div className="nav-cart">
-            <div className="current-cart">0</div>
+            <div className="current-cart">{qtyInCart}</div>
             <NavLink to="cart">
               <img src={require("../assets/cart-outline.png")} alt="cart" />
             </NavLink>
@@ -36,3 +42,5 @@ export default function StickyBar() {
     </>
   );
 }
+
+export { loader, StickyBar };

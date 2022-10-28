@@ -72,7 +72,7 @@ const items = [
   },
 ];
 
-async function getProduct(id) {
+function getProduct(id) {
   let product = items.find((item) => item.id === id);
   return product ?? null;
 }

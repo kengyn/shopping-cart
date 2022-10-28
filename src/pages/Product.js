@@ -1,9 +1,16 @@
 import React, { useEffect } from "react";
-import { useLoaderData, useNavigate } from "react-router-dom";
+import { useLoaderData, useNavigate, Form } from "react-router-dom";
 import { getProduct } from "../components/Items";
+import { addProduct } from "./Cart";
 import "../styles/Product.css";
 
-async function loader({ params }) {
+async function action({ request, params }) {
+  const formData = await request.formData();
+  const quantity = Object.fromEntries(formData);
+  addProduct(params.id, parseInt(quantity.quantity));
+}
+
+function loader({ params }) {
   return getProduct(params.id);
 }
 
@@ -16,7 +23,7 @@ const Product = () => {
     desc = (
       <img
         className="mayreel"
-        src={require(`../assets/Mayreel.png`)}
+        src={require(`../assets/standingMayreel.gif`)}
         alt="mayreel"
       />
     );
@@ -72,14 +79,20 @@ const Product = () => {
             </div>
           </div>
         </div>
-        <div className="buy-container">
+        <Form className="buy-container" method="post">
           <label htmlFor="quantity">QTY</label>
-          <input type="number" id="quantity" defaultValue={1}></input>
-          <button>Add To Cart</button>
-        </div>
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            defaultValue={1}
+            min="1"
+          ></input>
+          <button type="submit">Add To Cart</button>
+        </Form>
       </div>
     </div>
   );
 };
 
-export { loader, Product };
+export { loader, Product, action };
