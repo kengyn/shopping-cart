@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.1cb5b68b.css",
+    "main.js": "/shopping-cart/static/js/main.a81cb78c.js",
+    "static/media/gacha-fgo.gif": "/shopping-cart/static/media/gacha-fgo.22d8c8b00319fe13a7bb.gif",
+    "static/media/GACHAAA.png": "/shopping-cart/static/media/GACHAAA.22a36ddb157be67ef261.png",
+    "static/media/daimonds.png": "/shopping-cart/static/media/daimonds.026873e1a825ac527819.png",
+    "static/media/mayreel.gif": "/shopping-cart/static/media/mayreel.c2a92b72218017b7ea6c.gif",
+    "static/media/standingMayreel.gif": "/shopping-cart/static/media/standingMayreel.8f718e948fb9de82e9d4.gif",
+    "static/media/angryMayreel.gif": "/shopping-cart/static/media/angryMayreel.a74fe45c0b74153815eb.gif",
+    "static/media/Item_Acquaint_Fate.webp": "/shopping-cart/static/media/Item_Acquaint_Fate.92d785d77c4bab903687.webp",
+    "static/media/Item_Intertwined_Fate.webp": "/shopping-cart/static/media/Item_Intertwined_Fate.35710fc49f984e8d90bd.webp",
+    "static/media/Saintquartz.webp": "/shopping-cart/static/media/Saintquartz.fcff37f4acddf64be2e9.webp",
+    "index.html": "/shopping-cart/index.html",
+    "main.1cb5b68b.css.map": "/shopping-cart/static/css/main.1cb5b68b.css.map",
+    "main.a81cb78c.js.map": "/shopping-cart/static/js/main.a81cb78c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1cb5b68b.css",
+    "static/js/main.a81cb78c.js"
+  ]
+}
