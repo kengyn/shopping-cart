@@ -17,7 +17,7 @@ import Gacha from "./pages/Gacha";
 
 const App = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<StickyBar />} loader={stickyLoader}>
+    <Route path="/shopping-cart" element={<StickyBar />} loader={stickyLoader}>
       <Route index element={<Home />} />
       <Route path="shop" element={<Shop />}>
         <Route

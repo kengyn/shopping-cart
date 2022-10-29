@@ -12,7 +12,7 @@ function StickyBar() {
     <>
       <header>
         <div className="nav-header">
-          <NavLink to="/">GACHA</NavLink>
+          <NavLink to="/shopping-cart">GACHA</NavLink>
         </div>
         <div className="primary-nav">
           <ul>
