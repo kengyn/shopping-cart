@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { items } from "../components/Items";
 import "../styles/Cart.css";
 
@@ -31,9 +32,8 @@ function totalQty() {
   return sum;
 }
 
-//function updateProduct(product, qty) {}
-
 const Cart = () => {
+  let navigate = useNavigate();
   const renderCart = () => {
     if (cart.length === 0) {
       return (
@@ -70,7 +70,9 @@ const Cart = () => {
                 </div>
               </div>
               <div className="cart-buttons-container">
-                <button className="cart-remove-button">Remove</button>
+                <button id={item.id.id} className="cart-remove-button">
+                  Remove
+                </button>
               </div>
             </li>
           ))}
@@ -87,13 +89,42 @@ const Cart = () => {
           </div>
           <div className="sub-check-container estimate-container">
             <div>Estimated Total</div>
-            <div>USD $fart</div>
+            <div>USD ${totalQty()}</div>
           </div>
           <button className="checkout-button">Checkout</button>
         </div>
       </>
     );
   };
+
+  useEffect(() => {
+    const removeButtons = document.querySelectorAll(".cart-remove-button");
+
+    function deleteProduct(id) {
+      let index = cart.findIndex((item) => item.id.id === id);
+      if (index > -1) {
+        cart.splice(index, 1);
+      }
+    }
+    if (removeButtons) {
+      removeButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          deleteProduct(button.id);
+          navigate("/cart");
+          console.log(cart);
+        });
+      });
+    }
+    return () => {
+      if (removeButtons) {
+        removeButtons.forEach((button) => {
+          button.removeEventListener("click", () => {
+            deleteProduct(button.id);
+          });
+        });
+      }
+    };
+  }, [navigate]);
 
   return <main className="cart-main">{renderCart()}</main>;
 };
