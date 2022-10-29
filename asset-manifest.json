@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.1cb5b68b.css",
-    "main.js": "/shopping-cart/static/js/main.43ef76e7.js",
+    "main.js": "/shopping-cart/static/js/main.358310ac.js",
     "static/media/gacha-fgo.gif": "/shopping-cart/static/media/gacha-fgo.22d8c8b00319fe13a7bb.gif",
     "static/media/GACHAAA.png": "/shopping-cart/static/media/GACHAAA.22a36ddb157be67ef261.png",
     "static/media/daimonds.png": "/shopping-cart/static/media/daimonds.026873e1a825ac527819.png",
@@ -13,10 +13,10 @@
     "static/media/Saintquartz.webp": "/shopping-cart/static/media/Saintquartz.fcff37f4acddf64be2e9.webp",
     "index.html": "/shopping-cart/index.html",
     "main.1cb5b68b.css.map": "/shopping-cart/static/css/main.1cb5b68b.css.map",
-    "main.43ef76e7.js.map": "/shopping-cart/static/js/main.43ef76e7.js.map"
+    "main.358310ac.js.map": "/shopping-cart/static/js/main.358310ac.js.map"
   },
   "entrypoints": [
     "static/css/main.1cb5b68b.css",
-    "static/js/main.43ef76e7.js"
+    "static/js/main.358310ac.js"
   ]
 }
