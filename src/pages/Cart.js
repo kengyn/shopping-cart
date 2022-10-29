@@ -110,7 +110,7 @@ const Cart = () => {
       removeButtons.forEach((button) => {
         button.addEventListener("click", () => {
           deleteProduct(button.id);
-          navigate("/cart");
+          navigate("/shopping-cart/cart");
           console.log(cart);
         });
       });

@@ -36,7 +36,7 @@ const Product = () => {
     const closeDisplay = document.querySelector(".display-product");
 
     function close() {
-      navigate("/shop");
+      navigate("/shopping-cart/shop");
     }
 
     closeDisplay.addEventListener("click", (e) => {

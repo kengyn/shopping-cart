@@ -5,7 +5,12 @@
 Shopping site with ability to
 
 - add any number of items to cart
-- calculate estimated total in cart
+- calculate total in cart
 - remove items from cart
 
-github pages doesnt like the new version of react router :(
+Built with
+
+- HTML/CSS
+- JavaScript
+- React
+- React Router
