@@ -2,10 +2,10 @@
   position: absolute;
   display: grid;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -65%);
   background-color: rgba(1, 1, 1, 0.6);
   width: 100vw;
-  height: 100vh;
+  height: 2000px;
   z-index: 100;
   overflow: hidden;
   justify-content: center;
@@ -18,7 +18,7 @@
   z-index: 101;
   cursor: default;
   width: min(70vw, 800px);
-  height: 40vh;
+  height: 50vh;
   display: grid;
   grid-template-areas:
     "img info"

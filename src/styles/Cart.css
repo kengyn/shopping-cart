@@ -1,4 +1,123 @@
-.cart-main > div {
+.mayreel-cart-text {
   font-weight: bold;
   font-size: 5rem;
+}
+
+.cart-main {
+  display: grid;
+  grid-template-areas:
+    "title ."
+    "item summary";
+  column-gap: 2rem;
+}
+
+.cart-main h1 {
+  grid-area: title;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+
+.cart-list {
+  grid-area: item;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-list li {
+  display: grid;
+  grid-template-areas:
+    "img name"
+    "img price"
+    "img remove";
+  border-bottom: 1px solid lightgray;
+  padding-top: 1rem;
+}
+
+.cart-list li img {
+  grid-area: img;
+  width: 150px;
+  margin: 0;
+}
+
+.cart-product-name {
+  grid-area: name;
+  font-size: 1.3rem;
+  font-weight: bold;
+  align-self: flex-end;
+  margin-bottom: 0.5rem;
+}
+
+.cart-price-container {
+  grid-area: price;
+  display: flex;
+  gap: 1rem;
+}
+
+.cart-price-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.cart-buttons-container {
+  grid-area: remove;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cart-remove-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom: 1px solid black;
+  margin-bottom: 1rem;
+}
+
+.cart-remove-button:hover {
+  border-bottom: 1px solid red;
+}
+
+.checkout-container {
+  grid-area: summary;
+  align-self: flex-start;
+  justify-self: flex-end;
+}
+
+.checkout-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.sub-check-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid lightgray;
+  gap: 4rem;
+}
+
+.estimate-container {
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.checkout-button {
+  cursor: pointer;
+  background-color: rgb(0 120 46);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 100%;
+  height: 3.5rem;
+  outline: none;
+  border: none;
+  transition: 0.3s;
+}
+
+.checkout-button:hover {
+  background-color: #008533;
 }

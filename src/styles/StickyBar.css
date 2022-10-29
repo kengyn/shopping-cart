@@ -29,6 +29,15 @@ a {
   grid-area: primary;
 }
 
+.primary-nav ul li a {
+  border: 2px solid transparent;
+  transition: 0.2s;
+}
+
+.primary-nav ul li a:hover {
+  border-bottom: 2px solid black;
+}
+
 .secondary-nav {
   grid-area: secondary;
   display: flex;
