@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`cart component renders empty cart 1`] = `
+<div>
+  <main
+    class="cart-main"
+  >
+    <main>
+      <img
+        alt="angry mayreel"
+        src="angryMayreel.gif"
+      />
+      <div
+        class="mayreel-cart-text"
+      >
+        Cart Empty
+      </div>
+    </main>
+  </main>
+</div>
+`;
+
+exports[`cart component renders item in cart correctly 1`] = `
+<div>
+  <main
+    class="cart-main"
+  >
+    <h1>
+      Cart
+    </h1>
+    <ul
+      class="cart-list"
+    >
+      <li>
+        <img
+          alt="Acquaint Fate"
+          src="Item_Acquaint_Fate.webp"
+        />
+        <div
+          class="cart-product-name"
+        >
+          Acquaint Fate
+        </div>
+        <div
+          class="cart-price-container"
+        >
+          <div
+            class="cart-price-info"
+          >
+            <div>
+              Item Price
+            </div>
+            <div>
+              $
+              1
+              .00
+            </div>
+          </div>
+          <div
+            class="cart-price-info"
+          >
+            <div>
+              Quantity
+            </div>
+            <div>
+              4
+            </div>
+          </div>
+          <div
+            class="cart-price-info"
+          >
+            <div>
+              Total Price
+            </div>
+            <div>
+              $
+              4
+              .00
+            </div>
+          </div>
+        </div>
+        <div
+          class="cart-buttons-container"
+        >
+          <button
+            class="cart-remove-button"
+            id="acquaint-fate"
+          >
+            Remove
+          </button>
+        </div>
+      </li>
+    </ul>
+    <div
+      class="checkout-container"
+    >
+      <div
+        class="checkout-title"
+      >
+        Order Summary
+      </div>
+      <div
+        class="sub-check-container"
+      >
+        <div>
+          Subtotal
+        </div>
+        <div>
+          all ur money
+        </div>
+      </div>
+      <div
+        class="sub-check-container"
+      >
+        <div>
+          Tax
+        </div>
+        <div>
+          gimme ur wallet
+        </div>
+      </div>
+      <div
+        class="sub-check-container estimate-container"
+      >
+        <div>
+          Estimated Total
+        </div>
+        <div>
+          USD $
+          4
+        </div>
+      </div>
+      <button
+        class="checkout-button"
+      >
+        Checkout
+      </button>
+    </div>
+  </main>
+</div>
+`;

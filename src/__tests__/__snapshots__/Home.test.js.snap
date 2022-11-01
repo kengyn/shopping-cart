@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home component renders image 1`] = `
+<div>
+  <main>
+    <div
+      class="main-content"
+    >
+      <img
+        alt="gachagacha"
+        src="GACHAAA.png"
+      />
+      <button>
+        SHOP NOW
+      </button>
+    </div>
+  </main>
+</div>
+`;

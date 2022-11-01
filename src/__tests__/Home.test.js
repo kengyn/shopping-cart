@@ -1,18 +1,25 @@
 import React from "react";
-import { act, render, screen } from "@testing-library/react";
-import Home from "../components/Home";
+import { render } from "@testing-library/react";
+import Home from "../pages/Home";
 import "@testing-library/jest-dom";
-import userEvent from "@testing-library/user-event";
 import { MemoryRouter as Router } from "react-router-dom";
 
-describe("Home", () => {
-  it("should render Home heading", () => {
-    render(
+describe("Home component", () => {
+  it("renders shop button", () => {
+    const { getByRole } = render(
       <Router>
         <Home />
       </Router>
     );
-    const text = screen.getByText(/Home/i);
-    expect(text).toBeInTheDocument();
+    expect(getByRole("button").textContent).toMatch(/sHop NoW/i);
+  });
+
+  it("renders image", () => {
+    const { container } = render(
+      <Router>
+        <Home />
+      </Router>
+    );
+    expect(container).toMatchSnapshot();
   });
 });

@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shop component renders shop items 1`] = `
+<div>
+  <div
+    class="shop-main"
+  >
+    <h1>
+      Shop
+    </h1>
+    <div
+      class="items-container"
+    >
+      <ul>
+        <li
+          class="acquaint-fate"
+        >
+          <a
+            class=""
+            href="/product/acquaint-fate"
+          >
+            <img
+              alt="Acquaint Fate"
+              src="Item_Acquaint_Fate.webp"
+            />
+            <div
+              class="shop-item-name"
+            >
+              Acquaint Fate
+            </div>
+            <div
+              class="shop-item-price"
+            >
+              $
+              1
+            </div>
+          </a>
+        </li>
+        <li
+          class="intertwined-fate"
+        >
+          <a
+            class=""
+            href="/product/intertwined-fate"
+          >
+            <img
+              alt="Intertwined Fate"
+              src="Item_Intertwined_Fate.webp"
+            />
+            <div
+              class="shop-item-name"
+            >
+              Intertwined Fate
+            </div>
+            <div
+              class="shop-item-price"
+            >
+              $
+              1
+            </div>
+          </a>
+        </li>
+        <li
+          class="saint-quartz"
+        >
+          <a
+            class=""
+            href="/product/saint-quartz"
+          >
+            <img
+              alt="Saint Quartz"
+              src="Saintquartz.webp"
+            />
+            <div
+              class="shop-item-name"
+            >
+              Saint Quartz
+            </div>
+            <div
+              class="shop-item-price"
+            >
+              $
+              1
+            </div>
+          </a>
+        </li>
+        <li
+          class="gem"
+        >
+          <a
+            class=""
+            href="/product/gem"
+          >
+            <img
+              alt="Gem"
+              src="daimonds.png"
+            />
+            <div
+              class="shop-item-name"
+            >
+              Gem
+            </div>
+            <div
+              class="shop-item-price"
+            >
+              $
+              1
+            </div>
+          </a>
+        </li>
+        <li
+          class="covenant-bookmark"
+        >
+          <a
+            class=""
+            href="/product/covenant-bookmark"
+          >
+            <img
+              alt="Covenant Bookmark"
+              src="Covenant-Bookmark.png"
+            />
+            <div
+              class="shop-item-name"
+            >
+              Covenant Bookmark
+            </div>
+            <div
+              class="shop-item-price"
+            >
+              $
+              1
+            </div>
+          </a>
+        </li>
+        <li
+          class="galaxy-bookmark"
+        >
+          <a
+            class=""
+            href="/product/galaxy-bookmark"
+          >
+            <img
+              alt="Galaxy Bookmark"
+              src="galaxy-bookmark.png"
+            />
+            <div
+              class="shop-item-name"
+            >
+              Galaxy Bookmark
+            </div>
+            <div
+              class="shop-item-price"
+            >
+              $
+              1
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

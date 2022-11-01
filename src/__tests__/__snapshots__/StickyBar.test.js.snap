@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`navbar component renders nav bar 1`] = `
+<div>
+  <header>
+    <div
+      class="nav-header"
+    >
+      <a
+        class=""
+        href="/shopping-cart"
+      >
+        GACHA
+      </a>
+    </div>
+    <div
+      class="primary-nav"
+    >
+      <ul>
+        <li>
+          <a
+            class=""
+            href="/shop"
+          >
+            Shop
+          </a>
+        </li>
+        <li>
+          <a
+            class=""
+            href="/gacha"
+          >
+            Roll Gacha
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="secondary-nav"
+    >
+      <div
+        class="search-container"
+      >
+        <img
+          alt="search"
+          src="magnify.png"
+        />
+        <input
+          type="text"
+        />
+      </div>
+      <div
+        class="nav-cart"
+      >
+        <div
+          class="current-cart"
+        >
+          34
+        </div>
+        <a
+          class=""
+          href="/cart"
+        >
+          <img
+            alt="cart"
+            src="cart-outline.png"
+          />
+        </a>
+      </div>
+    </div>
+  </header>
+</div>
+`;
